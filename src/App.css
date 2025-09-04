@@ -31,7 +31,7 @@ a{
   gap: 30px;
 }
 
-/* Header Part */
+/* Header Part Start */
 .header-top-strip {
   border-bottom: 1px solid var(--color-3b4149);
   background-color: var(--color-131921);
@@ -76,3 +76,17 @@ a{
   background-color: transparent;
   color: var(--color-fedb69) !important;
 }
+/* Header Part End */
+/* Footer Part Start */
+footer{
+  background-color: var(--color-232f3e);
+}
+footer:not(:first-child){
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+footer .input-group-text{
+  background-color: var(--color-232f3e);
+  color: white;
+  padding: 8px 17px;
+}
+/* Footer Part End */
