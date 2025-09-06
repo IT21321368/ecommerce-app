@@ -1,5 +1,5 @@
 import React from 'react';
-import { BsSearch } from 'react-icons/bs';
+import { BsLinkedin, BsGithub, BsYoutube, BsInstagram } from 'react-icons/bs';
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
@@ -33,6 +33,23 @@ const Footer = () => {
                 Hno: 277 Near Vill chopal, <br/> Sonipat, Haryana <br/>
                 PinCode: 131103 
               </address>
+              <a href='tel:+91 9876543210' className='mt-3 d-block mb-1 text-white'>+91 9876543210</a>
+              <a href='mailto:example@example.com' className='mt-2 d-block mb-0 text-white'>example@example.com</a>
+              <div className='social_icons d-flex align-items-center gap-30 mt-4'>
+                <a href='https://www.facebook.com/' className='text-white'>
+                  <BsLinkedin className='fs-4'/>
+                </a>
+                <a href='https://www.instagram.com/' className='text-white'>
+                  <BsInstagram className='fs-4'/>
+                </a>
+                <a href='https://www.instagram.com/' className='text-white'>
+                  <BsGithub className='fs-4'/>
+                </a>
+                <a href='https://www.twitter.com/' className='text-white'>
+                  <BsYoutube className='fs-4'/>
+                </a>
+              </div>
+
             </div>
           </div>
           <div className='col-3'>
