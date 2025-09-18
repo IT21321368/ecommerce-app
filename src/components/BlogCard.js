@@ -14,7 +14,7 @@ const BlogCard = () => {
                 <p className='desc'>
                     There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour .
                 </p>
-                <Link className='button' to='/'>Read More</Link>
+                <Link className='button' to='/blogs/:id'>Read More</Link>
 
             </div>
         </div>
