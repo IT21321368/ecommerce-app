@@ -1,0 +1,35 @@
+import React from 'react'
+import BreadCrumb from '../components/BreadCrumb'
+import  Meta  from '../components/Meta'
+import { HiOutlineArrowLeft } from 'react-icons/hi'
+import { Link } from 'react-router-dom'
+
+
+const SingleBlog = () => {
+  return (
+    <>
+      <Meta title={'Dynamic Blog Title'}/>
+      <BreadCrumb title="Dynamic Blog Title" />
+      <div className='blog-wrapper home-wrapper-2 py-5'>
+        <div className='container-xxl'>
+            <div className='row'>
+                <div className='col-12'>
+                    <div className='single-blog-card'>
+                        <Link to='/blogs' className='d-flex align-items-center gap-10'>
+                        <HiOutlineArrowLeft className='fs-4' /> Go Back To Blogs</Link>
+                        <h3 className='title'>A Beautiful Sunday Morning Renaissance</h3>
+                        <img src='images/blog-1.jpg' className='img-fluid w-100 my-4' alt='blog'/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+     
+    </>
+  )
+}
+
+export default SingleBlog
