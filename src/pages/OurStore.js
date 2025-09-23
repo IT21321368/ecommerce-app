@@ -4,6 +4,7 @@ import  Meta  from '../components/Meta'
 import ReactStars from "react-rating-stars-component";
 import ProductCard from '../components/ProductCard';
 import Color from '../components/Color';
+import Container from '../components/Container'
 
 
 const OurStore = () => {
@@ -12,8 +13,7 @@ const OurStore = () => {
     <>
     <Meta title={'Our Store'}/>
     <BreadCrumb title="Our Store" />
-    <div className='store-wrapper home-wrapper-2 py-5 '>
-        <div className='container-xxl'>
+    <Container class1='store-wrapper home-wrapper-2 py-5 '>
             <div className='row'>
                 <div className='col-3'>
                     <div className='filter-card mb-3'>
@@ -161,7 +161,7 @@ const OurStore = () => {
                             <p className='mb-0 d-block'style={{ "width": "100px" }}>Sort By:</p>
                             <select name='' className='form-control form-select' id=''>
                                 <option value={"manual"}>Featured </option>
-                                <option value={"best-selling"} ></option>
+                                <option value={"best-selling"} >Best Selling</option>
                                 <option value={"title-ascending"} >Alphabetically, A-Z</option>
                                 <option value={"title-descending"} >Alphabetically, Z-A</option>
                                 <option value={"price-ascending"} >Price, low to high</option>
@@ -190,10 +190,7 @@ const OurStore = () => {
                 </div>
             </div>
             </div>
-            
-        </div>
-        
-    </div>
+    </Container>
 
     </>
   )
